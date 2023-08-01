@@ -9,6 +9,11 @@ html {
   font-weight: 400;
   font-size: 24px;
   line-height: 1.8;
+  color: white;
+}
+
+body {
+  background-color: #201f1f;
 }
 
 header {
@@ -20,12 +25,13 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 25px;
-  background-color: tomato;
+  background-color: black;
+  color: white;
 }
 
 header a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 .avatar a {
@@ -105,12 +111,21 @@ main ul {
   list-style: none;
 }
 
+ul h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+ul li {
+  margin: 30px 0;
+}
+
 footer {
   margin-top: 60px;
   padding: 12px 0;
   bottom: 0;
   width: 100vw;
-  background-color: tomato;
+  background-color: black;
   font-size: 16px;
 }
 
@@ -122,6 +137,15 @@ footer p {
 
 @media (max-width: 700px) {
   main img {
+    height: 80vw;
+  }
+
+  main p {
+    margin: 0 20px;
+    text-indent: 20px;
+  }
+
+  #foto_vertical {
     height: 80vw;
   }
 }

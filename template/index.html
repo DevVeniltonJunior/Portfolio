@@ -15,22 +15,39 @@
 
   <body>
     <header>
-      <div>
+      <div class="avatar">
         <a href="./index.html">
-          <img width="75px" height="75px" src="../assets/person-circle-outline.svg" alt="User">
+          <img src="../assets/avatar.png" alt="Venilton">
         </a>
       </div>
-      <div>
+      <div class="links">
         <a href="./index.html">Home</a>
         <a href="./trajetoria.html">Trajetória</a>
         <a href="./projects.html">Projetos</a>
       </div>
     </header>
 
-    <div>
-      <h1>Sobre min</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam laborum at molestias nisi aliquam quos iure vero odit nam. Rerum sequi hic impedit accusamus eos velit pariatur? Rem, vel nostrum?</p>
-    </div>
+    <main>
+      <div>
+        <h1>Sobre min</h1>
+        <p>
+          Eu sou Venilton Junior, tenho <span id="idade"></span> anos e sou apaixonado por tecnologia. Sou uma pessoa dedicada, focada, com facilidade em trabalhar em equipe e tenho ótima adaptabilidade.
+        </p>
+        <p>
+          Atualmente, estou no último semestre da faculdade de Análise e Desenvolvimento de Sistemas na UNITAU, onde estou desenvolvendo meu <a href="https://www.notion.so/TCC-Unitau-2a87b6ebee1f4d5d88814ab76d08cdd6?pvs=4" target="_blank">artigo ciêntifico</a> científico sobre padrões de projetos. Além disso, atuo como estagiário na Nimbus House como desenvolvedor full-stack.
+        </p>
+        <p>
+          Meus hobbies incluem jogar videogame, assistir filmes e séries, ler livros e mangás, ouvir música e, futuramente, desenvolver jogos.
+        </p>
+        <p>
+          Nasci e ainda moro em São José dos Campos com minha noiva, uma mulher incrível que sempre me apoia. Juntos, temos um gato gordo chamado Fabrício.
+        </p>
+        <div id="sobremin_images">
+          <img src="../assets/img_casal.jpg" alt="Venilton e Graziela.">
+          <img id="foto_vertical" src="../assets/img_casal_gato.jpg" alt="Venilton, Graziela e o Fabrício.">
+        </div>
+      </div>
+    </main>
 
     <footer>
       <div>
@@ -39,6 +56,7 @@
         <p>Todos os direitos reservados</p>
       </div>
     </footer>
+    <script src="../script/idade.js"></script>
   </body>
 
 </html>

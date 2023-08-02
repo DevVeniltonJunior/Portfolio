@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  background-color: #201f1f;
+  background: #201f1f url("../assets/background.svg") no-repeat center/cover;
 }
 
 header {
@@ -25,8 +25,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 10px 25px;
-  background-color: black;
   color: white;
+  background: #201f1f url("../assets/header.svg") no-repeat center/cover;
 }
 
 header a {
@@ -45,6 +45,11 @@ header a {
   height: 75px;
 }
 
+.avatar a img:hover {
+  border-radius: 50%;
+  border: 2px solid #fcba03;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;
@@ -56,6 +61,18 @@ header a {
   font-weight: 500;
 }
 
+#menu {
+  border-radius: 5px;
+  padding: 0 10px;
+  background-color:  rgba(255, 255, 255, 0.1);
+  border: 0.2px solid rgba(255, 255, 255, 0.5);
+}
+
+#menu:hover {
+  color: #f7c63e;
+  background-color: white;
+}
+
 main {
   margin-top: 30px;
   min-width: 100vw;
@@ -64,6 +81,7 @@ main {
 main h1 {
   text-align: center;
   padding: 32px 0;
+  color: #fcba03;
 }
 
 main p {
@@ -114,6 +132,7 @@ main ul {
 ul h2 {
   font-size: 28px;
   margin-bottom: 25px;
+  color: #9803fc;
 }
 
 ul li {
@@ -125,7 +144,7 @@ footer {
   padding: 12px 0;
   bottom: 0;
   width: 100vw;
-  background-color: black;
+  background: #201f1f url("../assets/footer.svg") no-repeat center/cover;
   font-size: 16px;
 }
 
@@ -133,6 +152,10 @@ footer p {
   text-align: center;
   justify-content: center;
   padding: 4px;
+}
+
+#footerText {
+  color: #fcba03;
 }
 
 @media (max-width: 700px) {
@@ -147,5 +170,14 @@ footer p {
 
   #foto_vertical {
     height: 80vw;
+  }
+
+  body {
+    background: #201f1f url("../assets/mobile-background.svg") no-repeat center/cover;
+  }
+
+  .links {
+    gap: 8px;
+    margin-top: 15px;
   }
 }
